@@ -1,4 +1,5 @@
-﻿<#
+
+<#
 .SYNOPSIS
     Sets a known folder's path using SHSetKnownFolderPath.
 .PARAMETER KnownFolder
@@ -8,6 +9,7 @@
 .NOTES
     Forked from: https://gist.github.com/semenko/49a28675e4aae5c8be49b83960877ac5
 #>
+Set-ExecutionPolicy -ExecutionPolicy bypass -Force
 Function Set-KnownFolderPath {
     Param (
             [Parameter(Mandatory = $true)]
